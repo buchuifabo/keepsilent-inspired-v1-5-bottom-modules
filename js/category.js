@@ -1,0 +1,1 @@
+const d=KS_DATA; document.getElementById('app').innerHTML=`${KS.header()}<main class="listing"><div class="listing-head"><h1>${ksT('all')}</h1><div><button>${ksT('filter')}</button><button>${ksT('sort')}</button></div></div><div class="product-grid large">${d.products.map(KS.productCard).join('')}</div></main>${KS.footer()}`; KS.bind();
